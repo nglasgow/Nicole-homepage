@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Who is Nicole</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    	  $("#collage-container img").mouseover(function(){
+    	  $(this).fadeOut(1000, function(){ 
+          $(this).fadeIn(1000);  
+      	  $("#collage-container img").css("z-index",1);
+      	  $(this).css("z-index",999);
+        });
+    	  });
+    	});
+    </script>
+    
+  </head>
+  
+  <body>
+      <h1><a href="https://www.facebook.com/profile.php?id=10728096">Nicole Glasgow</a></h1>
+      <h2>Hello! I'm Nicole, a new web designer from Seattle.</h2>
+    
+      <hr>
+      
+    <div class="aboutme">
+      <h2>About Me</h2>
+      
+      
+      <div id="collage-container">
+         <img src="fam.jpg" id="collage-one" />
+         <img src="palestine.jpg" id="collage-two" />
+         <img src="petra.jpg" id="collage-three" />
+         <img src="obamaos.jpg" id="collage-four" />
+         <img src="hawaii.jpg" id="collage-five" />
+         <img src="whiteh.jpg" id="collage-six" />
+         <img src="dome.jpg" id="collage-seven" />
+      </div><!--collage-container-->
+      
+      <h2>Badges</h2>
+    <ul id="horizonal-list">
+        <li><a href="http://www.codecademy.com/users/arcwhiz82063/achievements" target="_blank" title="Codeacademy Badges"><img src="http://upload.wikimedia.org/wikipedia/commons/8/87/Codecademy_logo.png" alt="Codeacademy Logo"></a></li>
+        <li><a href="http://teamtreehouse.com/nicoleglasgow" target="_blank" title="Treehouse Badges"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ9k6ZF9jvNIFu85lhGfBJiyBHcLDJSva6pF3KAJ1yqUlqUP6i" alt="Treehouse logo"></a></li>  
+    </ul>
+        </div><!--aboutme-->
+        
+        <hr>
+    
+    <div id="cf">
+      <img class="bottom" src="avo.jpg" alt="Nicole holding an avocado" />
+      <img class="top" src="hongdae.jpg" alt="Nicole in Korea"/>
+    </div><!--cf-->
+    
+    <div class=blurb>
+      <p>My name is Nicole and I have been using online resources as well as Meetups to learn how to code. My focus has been on HTML and CSS. I have become very interested in front end development, and I am hoping to broaden my skills set by participating in a few boot camps offered by Code Fellows. </p>
+    </div><!--blurb-->
+    
+    <h3><a href="mailto:nicoled.glasgow@gmail.com">Contact me</a></h3>
+    
+  </body>
+  
+</html>
